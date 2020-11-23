@@ -17,10 +17,12 @@ let myLayer;
 let myImage;
 let globalDistance;
 
-function preload() {
-  // myImage = loadImage("v1.jpg");
-}
+const listOfImages = ["text1.jpg", "text2.jpg", "text3.jpg", "text4.jpg"];
+var currentImage = 0;
 
+// function preload() {
+//   // myImage = loadImage("v1.jpg");
+// }
 
 function setup() {
   createCanvas(windowX, windowY);
@@ -31,7 +33,7 @@ function setup() {
   poseNet.on('pose', drawFace);
   myLayer = createGraphics(50, 50);
   myImage = new Image();
-  myImage.src = "text1.jpg"
+  myImage.src = listOfImages[currentImage];
 }
 
 function drawFace(poses){
@@ -100,6 +102,15 @@ function draw() {
   faceMask5.style.transform = scale("#distance");
   pop();
   blendMode(BLEND);
+}
+
+function mousePressed() {
+  if(currentImage < listOfImages.length) {
+    currentImage++;
+  } else {
+    currentImage = 0;
+  }
+  myImage.src = listOfImages[currentImage];
 }
 
 // function tiltX(){
