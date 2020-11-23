@@ -1,0 +1,110 @@
+html, body {
+  background-color: black;
+  color: white;
+  text-decoration-color:
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  padding: 0;
+  background-color: white;
+  z-index: 5;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border:white 2px solid;
+}
+p{
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 85%;
+    bottom: 0;
+    left: 24.9%;
+    right: 0;
+}
+
+#faceMask1 {
+  padding: 0;
+  position: absolute;
+  top: 160px;
+  bottom: 0;
+  left: 360px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background-image: url("images/gif/v1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#faceMask2 {
+  padding: 0;
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 480px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background-image: url("images/gif/v2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#faceMask3 {
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 440px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background-image: url("images/gif/v3.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#faceMask4 {
+  padding: 0;
+  position: absolute;
+  top: -50px;
+  bottom: 0;
+  left: 520px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background-image: url("images/gif/v4.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#faceMask5 {
+  padding: 0;
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  left: 430px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  background-image: url("images/gif/v5.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* animation: myfirst 6000s 1;
+  animation-direction: normal;
+}
+@keyframes myfirst {
+  0%   {left: 430px; top: 120px;}
+  100%  {left: 1000000px; top: 120px;} */
+}
